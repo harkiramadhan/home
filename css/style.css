@@ -1,0 +1,45 @@
+body {
+  background: #FAE791;
+}
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#Head {
+  transform-origin: 50% 100%;
+  transform: rotateZ(-15deg);
+  animation: tilt 2s ease-in-out infinite alternate;
+}
+@keyframes tilt {
+  10% {
+    transform: rotateZ(-15deg);
+  }
+  40% {
+    transform: rotateZ(15deg);
+  }
+  60% {
+    transform: rotateZ(15deg);
+  }
+  80% {
+    transform: rotateZ(-15deg);
+  }
+}
+#eyes {
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  54% {
+    opacity: 1;
+  }
+}
